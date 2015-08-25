@@ -1,1 +1,17 @@
-<h1>상품 목록</h1>
+<div class="title">
+  <h1>상품 목록</h1>
+</div>
+
+<div class="search-form">
+  <form name="form" novalidate ng-submit="search(form)">
+    <input type="text" name="query" ng-model="query" ng-required="true" />
+    <input type="submit" value="검색"/>
+    <p ng-show="form.query.$error.required && form.$submitted">검색어를 입력하세요.</p>
+  </form>
+</div>
+
+<div class="item-list">
+  <div ng-repeat="item in items">
+    <pre>{{item | json}}</pre>
+  </div>
+</div>
