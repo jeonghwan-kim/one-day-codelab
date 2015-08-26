@@ -9,7 +9,7 @@ angular.module('codelabApp', [
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .otherwise({
-        redirectTo: '/'
+        redirectTo: '/items'
       });
 
     $locationProvider.html5Mode(true);
