@@ -12,6 +12,7 @@
 }
 .item-list .the-item {
     border-bottom: 1px solid grey;
+    height: 180px;
 }
 .item-list .the-item .item-thumbnail {
     display: inline-block;
@@ -20,6 +21,7 @@
 }
 .item-list .the-item .item-thumbnail img {
     width: 100%;
+    max-width: 160px;
 }
 .item-list .the-item .item-title {
     display: inline-block;
