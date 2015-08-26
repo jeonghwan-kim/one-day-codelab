@@ -11,7 +11,18 @@
 </div>
 
 <div class="item-list">
-  <div ng-repeat="item in items">
-    <pre>{{item | json}}</pre>
+  <div class="the-item" ng-repeat="item in items">
+    <a ng-href="/items/{{item.id}}">
+      <div class="item-thumbnail">
+        <img ng-src="{{item.thumb_url}}" alt="{{item.title}}의 썸네일 이미지" />
+      </div>
+      <div class="item-title">
+        {{item.title}}
+      </div>
+      <div class="item-price">
+        {{item.price | number}}원
+      </div>
+    </a>
   </div>
+  <div ng-show="!items.length && form.$submitted && form.query.$viewValue">검색결과 없음</div>
 </div>

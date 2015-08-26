@@ -10,7 +10,7 @@ angular.module('codelabApp')
           return;
         }
 
-        $scope.items = Item.search({q: $scope.query});
+        $scope.items = Item.query({q: $scope.query});
 
       };
 
