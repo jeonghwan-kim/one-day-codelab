@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('codelabApp')
-  .controller('ItemsCtrl', function ($scope, Item) {
+    .controller('ItemsCtrl', function ($scope, Item) {
 
       $scope.items = Item.query();
 
@@ -11,7 +11,7 @@ angular.module('codelabApp')
         }
 
         $scope.items = Item.search({q: $scope.query});
-        
+
       };
 
-  });
+    });

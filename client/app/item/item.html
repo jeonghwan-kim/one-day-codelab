@@ -1,1 +1,17 @@
-<h1>상품 상세 정보</h1>
+<div class="title">
+  <h1>{{item.title}}의 상세 정보 페이지</h1>  
+</div>
+
+<div class="image">
+  <img src="{{item.image1_url}}" alt="상품이미지1" />
+</div>
+
+<div class="item-info">
+  <p>{{item.title}}</p>
+  <p>{{item.price | number}}원</p>
+  <button ng-click="buy(item)">구매</button>
+</div>
+
+<div class="item-description">
+  {{item.description}}
+</div>
