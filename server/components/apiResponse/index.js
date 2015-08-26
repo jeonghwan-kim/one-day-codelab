@@ -9,4 +9,5 @@ exports.result = function(res, statusCode, errCode, msg, data) {
     data: data
   };
   res.status(statusCode).json(output);
+
 };
